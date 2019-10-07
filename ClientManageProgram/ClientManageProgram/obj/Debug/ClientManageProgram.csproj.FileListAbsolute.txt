@@ -1,0 +1,10 @@
+C:\Users\haley\Documents\Csharp\ClientManageProgram\ClientManageProgram\obj\Debug\ClientManageProgram.csprojAssemblyReference.cache
+C:\Users\haley\Documents\Csharp\ClientManageProgram\ClientManageProgram\obj\Debug\ClientManageProgram.Form1.resources
+C:\Users\haley\Documents\Csharp\ClientManageProgram\ClientManageProgram\obj\Debug\ClientManageProgram.Properties.Resources.resources
+C:\Users\haley\Documents\Csharp\ClientManageProgram\ClientManageProgram\obj\Debug\ClientManageProgram.csproj.GenerateResource.cache
+C:\Users\haley\Documents\Csharp\ClientManageProgram\ClientManageProgram\obj\Debug\ClientManageProgram.csproj.CoreCompileInputs.cache
+C:\Users\haley\Documents\Csharp\ClientManageProgram\ClientManageProgram\bin\Debug\ClientManageProgram.exe.config
+C:\Users\haley\Documents\Csharp\ClientManageProgram\ClientManageProgram\bin\Debug\ClientManageProgram.exe
+C:\Users\haley\Documents\Csharp\ClientManageProgram\ClientManageProgram\bin\Debug\ClientManageProgram.pdb
+C:\Users\haley\Documents\Csharp\ClientManageProgram\ClientManageProgram\obj\Debug\ClientManageProgram.exe
+C:\Users\haley\Documents\Csharp\ClientManageProgram\ClientManageProgram\obj\Debug\ClientManageProgram.pdb
