@@ -64,6 +64,7 @@
             this.nameLAB = new System.Windows.Forms.Label();
             this.CustomerList = new System.Windows.Forms.ListBox();
             this.로드 = new System.Windows.Forms.Button();
+            this.Delete = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -406,11 +407,22 @@
             this.로드.UseVisualStyleBackColor = true;
             this.로드.Click += new System.EventHandler(this.로드_Click);
             // 
+            // Delete
+            // 
+            this.Delete.Location = new System.Drawing.Point(999, 432);
+            this.Delete.Name = "Delete";
+            this.Delete.Size = new System.Drawing.Size(88, 34);
+            this.Delete.TabIndex = 2;
+            this.Delete.Text = "삭제";
+            this.Delete.UseVisualStyleBackColor = true;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1099, 483);
+            this.Controls.Add(this.Delete);
             this.Controls.Add(this.로드);
             this.Controls.Add(this.CustomerList);
             this.Controls.Add(this.panel1);
@@ -479,6 +491,7 @@
         private System.Windows.Forms.Label nameLAB;
         private System.Windows.Forms.ListBox CustomerList;
         private System.Windows.Forms.Button 로드;
+        private System.Windows.Forms.Button Delete;
     }
 }
 
