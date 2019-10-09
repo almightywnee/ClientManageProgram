@@ -17,7 +17,7 @@ namespace ClientManageProgram
         public string _Bank;
         public string _Others;
 
-        public void CusInfo(string name, string customernum, string password, string personalnum, string address, string phonenum, string bank, string others)
+        public CustomerInfo(string name, string customernum, string password, string personalnum, string address, string phonenum, string bank, string others)
         {
             _Name = name;
             _CustomerNum = customernum;
@@ -33,6 +33,7 @@ namespace ClientManageProgram
         public string CusSave()
         {
             return _Name;
+             
         }
 
     }

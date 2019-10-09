@@ -54,14 +54,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.nameLAB = new System.Windows.Forms.Label();
-            this.ClinetNumLAB = new System.Windows.Forms.Label();
-            this.PasswordLAB = new System.Windows.Forms.Label();
-            this.PersonalNumLAB = new System.Windows.Forms.Label();
-            this.AdrresLAB = new System.Windows.Forms.Label();
-            this.PhonenumLAB = new System.Windows.Forms.Label();
-            this.BankLAB = new System.Windows.Forms.Label();
             this.OthersLAB = new System.Windows.Forms.Label();
+            this.BankLAB = new System.Windows.Forms.Label();
+            this.PhonenumLAB = new System.Windows.Forms.Label();
+            this.AddressLAB = new System.Windows.Forms.Label();
+            this.PersonalNumLAB = new System.Windows.Forms.Label();
+            this.PasswordLAB = new System.Windows.Forms.Label();
+            this.ClinetNumLAB = new System.Windows.Forms.Label();
+            this.nameLAB = new System.Windows.Forms.Label();
+            this.CustomerList = new System.Windows.Forms.ListBox();
+            this.로드 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,7 +80,7 @@
             this.ClientNumBox.Location = new System.Drawing.Point(142, 68);
             this.ClientNumBox.Name = "ClientNumBox";
             this.ClientNumBox.Size = new System.Drawing.Size(100, 25);
-            this.ClientNumBox.TabIndex = 1;
+            this.ClientNumBox.TabIndex = 2;
             this.ClientNumBox.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // PersonalNumBox
@@ -86,7 +88,7 @@
             this.PersonalNumBox.Location = new System.Drawing.Point(142, 150);
             this.PersonalNumBox.Name = "PersonalNumBox";
             this.PersonalNumBox.Size = new System.Drawing.Size(100, 25);
-            this.PersonalNumBox.TabIndex = 1;
+            this.PersonalNumBox.TabIndex = 4;
             this.PersonalNumBox.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // CName
@@ -132,7 +134,7 @@
             this.AddressBox.Location = new System.Drawing.Point(142, 190);
             this.AddressBox.Name = "AddressBox";
             this.AddressBox.Size = new System.Drawing.Size(100, 25);
-            this.AddressBox.TabIndex = 1;
+            this.AddressBox.TabIndex = 5;
             this.AddressBox.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // PhoneNumBox
@@ -140,7 +142,7 @@
             this.PhoneNumBox.Location = new System.Drawing.Point(142, 230);
             this.PhoneNumBox.Name = "PhoneNumBox";
             this.PhoneNumBox.Size = new System.Drawing.Size(100, 25);
-            this.PhoneNumBox.TabIndex = 1;
+            this.PhoneNumBox.TabIndex = 6;
             this.PhoneNumBox.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // PhoneNum
@@ -167,7 +169,7 @@
             this.PasswordBox.Location = new System.Drawing.Point(142, 109);
             this.PasswordBox.Name = "PasswordBox";
             this.PasswordBox.Size = new System.Drawing.Size(100, 25);
-            this.PasswordBox.TabIndex = 1;
+            this.PasswordBox.TabIndex = 3;
             this.PasswordBox.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // BankbookBox
@@ -175,7 +177,7 @@
             this.BankbookBox.Location = new System.Drawing.Point(142, 270);
             this.BankbookBox.Name = "BankbookBox";
             this.BankbookBox.Size = new System.Drawing.Size(257, 25);
-            this.BankbookBox.TabIndex = 1;
+            this.BankbookBox.TabIndex = 7;
             this.BankbookBox.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // Bankbook
@@ -204,7 +206,7 @@
             this.OthersBox.Multiline = true;
             this.OthersBox.Name = "OthersBox";
             this.OthersBox.Size = new System.Drawing.Size(257, 113);
-            this.OthersBox.TabIndex = 1;
+            this.OthersBox.TabIndex = 8;
             this.OthersBox.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // Save
@@ -212,7 +214,7 @@
             this.Save.Location = new System.Drawing.Point(311, 437);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(88, 34);
-            this.Save.TabIndex = 3;
+            this.Save.TabIndex = 9;
             this.Save.Text = "저장";
             this.Save.UseVisualStyleBackColor = true;
             this.Save.Click += new System.EventHandler(this.Save_Click);
@@ -294,7 +296,7 @@
             this.panel1.Controls.Add(this.OthersLAB);
             this.panel1.Controls.Add(this.BankLAB);
             this.panel1.Controls.Add(this.PhonenumLAB);
-            this.panel1.Controls.Add(this.AdrresLAB);
+            this.panel1.Controls.Add(this.AddressLAB);
             this.panel1.Controls.Add(this.PersonalNumLAB);
             this.panel1.Controls.Add(this.PasswordLAB);
             this.panel1.Controls.Add(this.ClinetNumLAB);
@@ -309,71 +311,8 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(438, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(386, 449);
+            this.panel1.Size = new System.Drawing.Size(386, 454);
             this.panel1.TabIndex = 4;
-            // 
-            // nameLAB
-            // 
-            this.nameLAB.AutoSize = true;
-            this.nameLAB.Location = new System.Drawing.Point(156, 17);
-            this.nameLAB.Name = "nameLAB";
-            this.nameLAB.Size = new System.Drawing.Size(45, 15);
-            this.nameLAB.TabIndex = 1;
-            this.nameLAB.Text = "label9";
-            // 
-            // ClinetNumLAB
-            // 
-            this.ClinetNumLAB.AutoSize = true;
-            this.ClinetNumLAB.Location = new System.Drawing.Point(156, 59);
-            this.ClinetNumLAB.Name = "ClinetNumLAB";
-            this.ClinetNumLAB.Size = new System.Drawing.Size(45, 15);
-            this.ClinetNumLAB.TabIndex = 1;
-            this.ClinetNumLAB.Text = "label9";
-            // 
-            // PasswordLAB
-            // 
-            this.PasswordLAB.AutoSize = true;
-            this.PasswordLAB.Location = new System.Drawing.Point(156, 100);
-            this.PasswordLAB.Name = "PasswordLAB";
-            this.PasswordLAB.Size = new System.Drawing.Size(45, 15);
-            this.PasswordLAB.TabIndex = 1;
-            this.PasswordLAB.Text = "label9";
-            // 
-            // PersonalNumLAB
-            // 
-            this.PersonalNumLAB.AutoSize = true;
-            this.PersonalNumLAB.Location = new System.Drawing.Point(156, 141);
-            this.PersonalNumLAB.Name = "PersonalNumLAB";
-            this.PersonalNumLAB.Size = new System.Drawing.Size(45, 15);
-            this.PersonalNumLAB.TabIndex = 1;
-            this.PersonalNumLAB.Text = "label9";
-            // 
-            // AdrresLAB
-            // 
-            this.AdrresLAB.AutoSize = true;
-            this.AdrresLAB.Location = new System.Drawing.Point(156, 181);
-            this.AdrresLAB.Name = "AdrresLAB";
-            this.AdrresLAB.Size = new System.Drawing.Size(45, 15);
-            this.AdrresLAB.TabIndex = 1;
-            this.AdrresLAB.Text = "label9";
-            // 
-            // PhonenumLAB
-            // 
-            this.PhonenumLAB.AutoSize = true;
-            this.PhonenumLAB.Location = new System.Drawing.Point(156, 221);
-            this.PhonenumLAB.Name = "PhonenumLAB";
-            this.PhonenumLAB.Size = new System.Drawing.Size(45, 15);
-            this.PhonenumLAB.TabIndex = 1;
-            this.PhonenumLAB.Text = "label9";
-            // 
-            // BankLAB
-            // 
-            this.BankLAB.AutoSize = true;
-            this.BankLAB.Location = new System.Drawing.Point(156, 261);
-            this.BankLAB.Name = "BankLAB";
-            this.BankLAB.Size = new System.Drawing.Size(45, 15);
-            this.BankLAB.TabIndex = 1;
-            this.BankLAB.Text = "label9";
             // 
             // OthersLAB
             // 
@@ -384,11 +323,96 @@
             this.OthersLAB.TabIndex = 1;
             this.OthersLAB.Text = "label9";
             // 
+            // BankLAB
+            // 
+            this.BankLAB.AutoSize = true;
+            this.BankLAB.Location = new System.Drawing.Point(156, 261);
+            this.BankLAB.Name = "BankLAB";
+            this.BankLAB.Size = new System.Drawing.Size(45, 15);
+            this.BankLAB.TabIndex = 1;
+            this.BankLAB.Text = "label9";
+            // 
+            // PhonenumLAB
+            // 
+            this.PhonenumLAB.AutoSize = true;
+            this.PhonenumLAB.Location = new System.Drawing.Point(156, 221);
+            this.PhonenumLAB.Name = "PhonenumLAB";
+            this.PhonenumLAB.Size = new System.Drawing.Size(45, 15);
+            this.PhonenumLAB.TabIndex = 1;
+            this.PhonenumLAB.Text = "label9";
+            // 
+            // AddressLAB
+            // 
+            this.AddressLAB.AutoSize = true;
+            this.AddressLAB.Location = new System.Drawing.Point(156, 181);
+            this.AddressLAB.Name = "AddressLAB";
+            this.AddressLAB.Size = new System.Drawing.Size(45, 15);
+            this.AddressLAB.TabIndex = 1;
+            this.AddressLAB.Text = "label9";
+            // 
+            // PersonalNumLAB
+            // 
+            this.PersonalNumLAB.AutoSize = true;
+            this.PersonalNumLAB.Location = new System.Drawing.Point(156, 141);
+            this.PersonalNumLAB.Name = "PersonalNumLAB";
+            this.PersonalNumLAB.Size = new System.Drawing.Size(45, 15);
+            this.PersonalNumLAB.TabIndex = 1;
+            this.PersonalNumLAB.Text = "label9";
+            // 
+            // PasswordLAB
+            // 
+            this.PasswordLAB.AutoSize = true;
+            this.PasswordLAB.Location = new System.Drawing.Point(156, 100);
+            this.PasswordLAB.Name = "PasswordLAB";
+            this.PasswordLAB.Size = new System.Drawing.Size(45, 15);
+            this.PasswordLAB.TabIndex = 1;
+            this.PasswordLAB.Text = "label9";
+            // 
+            // ClinetNumLAB
+            // 
+            this.ClinetNumLAB.AutoSize = true;
+            this.ClinetNumLAB.Location = new System.Drawing.Point(156, 59);
+            this.ClinetNumLAB.Name = "ClinetNumLAB";
+            this.ClinetNumLAB.Size = new System.Drawing.Size(45, 15);
+            this.ClinetNumLAB.TabIndex = 1;
+            this.ClinetNumLAB.Text = "label9";
+            // 
+            // nameLAB
+            // 
+            this.nameLAB.AutoSize = true;
+            this.nameLAB.Location = new System.Drawing.Point(156, 17);
+            this.nameLAB.Name = "nameLAB";
+            this.nameLAB.Size = new System.Drawing.Size(45, 15);
+            this.nameLAB.TabIndex = 1;
+            this.nameLAB.Text = "label9";
+            // 
+            // CustomerList
+            // 
+            this.CustomerList.FormattingEnabled = true;
+            this.CustomerList.ItemHeight = 15;
+            this.CustomerList.Location = new System.Drawing.Point(830, 12);
+            this.CustomerList.Name = "CustomerList";
+            this.CustomerList.Size = new System.Drawing.Size(257, 454);
+            this.CustomerList.TabIndex = 10;
+            this.CustomerList.SelectedIndexChanged += new System.EventHandler(this.CustomerList_SelectedIndexChanged);
+            // 
+            // 로드
+            // 
+            this.로드.Location = new System.Drawing.Point(142, 437);
+            this.로드.Name = "로드";
+            this.로드.Size = new System.Drawing.Size(75, 23);
+            this.로드.TabIndex = 11;
+            this.로드.Text = "로드";
+            this.로드.UseVisualStyleBackColor = true;
+            this.로드.Click += new System.EventHandler(this.로드_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(846, 483);
+            this.ClientSize = new System.Drawing.Size(1099, 483);
+            this.Controls.Add(this.로드);
+            this.Controls.Add(this.CustomerList);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Save);
             this.Controls.Add(this.Others);
@@ -409,6 +433,7 @@
             this.Controls.Add(this.Namebox);
             this.Name = "Form1";
             this.Text = "CientManageProgram";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -447,11 +472,13 @@
         private System.Windows.Forms.Label OthersLAB;
         private System.Windows.Forms.Label BankLAB;
         private System.Windows.Forms.Label PhonenumLAB;
-        private System.Windows.Forms.Label AdrresLAB;
+        private System.Windows.Forms.Label AddressLAB;
         private System.Windows.Forms.Label PersonalNumLAB;
         private System.Windows.Forms.Label PasswordLAB;
         private System.Windows.Forms.Label ClinetNumLAB;
         private System.Windows.Forms.Label nameLAB;
+        private System.Windows.Forms.ListBox CustomerList;
+        private System.Windows.Forms.Button 로드;
     }
 }
 
