@@ -63,8 +63,10 @@
             this.ClinetNumLAB = new System.Windows.Forms.Label();
             this.nameLAB = new System.Windows.Forms.Label();
             this.CustomerList = new System.Windows.Forms.ListBox();
-            this.로드 = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
+            this.Newbt = new System.Windows.Forms.Button();
+            this.editbt = new System.Windows.Forms.Button();
+            this.editokbt = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,7 +82,7 @@
             // 
             this.ClientNumBox.Location = new System.Drawing.Point(142, 68);
             this.ClientNumBox.Name = "ClientNumBox";
-            this.ClientNumBox.Size = new System.Drawing.Size(100, 25);
+            this.ClientNumBox.Size = new System.Drawing.Size(131, 25);
             this.ClientNumBox.TabIndex = 2;
             this.ClientNumBox.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
@@ -88,7 +90,7 @@
             // 
             this.PersonalNumBox.Location = new System.Drawing.Point(142, 150);
             this.PersonalNumBox.Name = "PersonalNumBox";
-            this.PersonalNumBox.Size = new System.Drawing.Size(100, 25);
+            this.PersonalNumBox.Size = new System.Drawing.Size(256, 25);
             this.PersonalNumBox.TabIndex = 4;
             this.PersonalNumBox.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
@@ -134,7 +136,7 @@
             // 
             this.AddressBox.Location = new System.Drawing.Point(142, 190);
             this.AddressBox.Name = "AddressBox";
-            this.AddressBox.Size = new System.Drawing.Size(100, 25);
+            this.AddressBox.Size = new System.Drawing.Size(256, 25);
             this.AddressBox.TabIndex = 5;
             this.AddressBox.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
@@ -142,7 +144,7 @@
             // 
             this.PhoneNumBox.Location = new System.Drawing.Point(142, 230);
             this.PhoneNumBox.Name = "PhoneNumBox";
-            this.PhoneNumBox.Size = new System.Drawing.Size(100, 25);
+            this.PhoneNumBox.Size = new System.Drawing.Size(256, 25);
             this.PhoneNumBox.TabIndex = 6;
             this.PhoneNumBox.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
@@ -169,7 +171,7 @@
             // 
             this.PasswordBox.Location = new System.Drawing.Point(142, 109);
             this.PasswordBox.Name = "PasswordBox";
-            this.PasswordBox.Size = new System.Drawing.Size(100, 25);
+            this.PasswordBox.Size = new System.Drawing.Size(131, 25);
             this.PasswordBox.TabIndex = 3;
             this.PasswordBox.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
@@ -177,7 +179,7 @@
             // 
             this.BankbookBox.Location = new System.Drawing.Point(142, 270);
             this.BankbookBox.Name = "BankbookBox";
-            this.BankbookBox.Size = new System.Drawing.Size(257, 25);
+            this.BankbookBox.Size = new System.Drawing.Size(256, 25);
             this.BankbookBox.TabIndex = 7;
             this.BankbookBox.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
@@ -203,7 +205,7 @@
             // 
             // OthersBox
             // 
-            this.OthersBox.Location = new System.Drawing.Point(142, 310);
+            this.OthersBox.Location = new System.Drawing.Point(141, 310);
             this.OthersBox.Multiline = true;
             this.OthersBox.Name = "OthersBox";
             this.OthersBox.Size = new System.Drawing.Size(257, 113);
@@ -212,9 +214,9 @@
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(311, 437);
+            this.Save.Location = new System.Drawing.Point(317, 432);
             this.Save.Name = "Save";
-            this.Save.Size = new System.Drawing.Size(88, 34);
+            this.Save.Size = new System.Drawing.Size(83, 34);
             this.Save.TabIndex = 9;
             this.Save.Text = "저장";
             this.Save.UseVisualStyleBackColor = true;
@@ -223,7 +225,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 17);
+            this.label1.Location = new System.Drawing.Point(21, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 15);
             this.label1.TabIndex = 0;
@@ -232,7 +234,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 59);
+            this.label2.Location = new System.Drawing.Point(21, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 15);
             this.label2.TabIndex = 0;
@@ -241,7 +243,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 100);
+            this.label3.Location = new System.Drawing.Point(21, 100);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 15);
             this.label3.TabIndex = 0;
@@ -250,7 +252,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 141);
+            this.label4.Location = new System.Drawing.Point(21, 141);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 15);
             this.label4.TabIndex = 0;
@@ -259,7 +261,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(17, 181);
+            this.label5.Location = new System.Drawing.Point(21, 181);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 15);
             this.label5.TabIndex = 0;
@@ -268,7 +270,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 221);
+            this.label6.Location = new System.Drawing.Point(21, 236);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 15);
             this.label6.TabIndex = 0;
@@ -277,7 +279,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(17, 261);
+            this.label7.Location = new System.Drawing.Point(21, 276);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 15);
             this.label7.TabIndex = 0;
@@ -286,7 +288,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(17, 301);
+            this.label8.Location = new System.Drawing.Point(21, 313);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(47, 15);
             this.label8.TabIndex = 0;
@@ -310,123 +312,138 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(438, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(386, 454);
+            this.panel1.Size = new System.Drawing.Size(401, 454);
             this.panel1.TabIndex = 4;
             // 
             // OthersLAB
             // 
             this.OthersLAB.AutoSize = true;
-            this.OthersLAB.Location = new System.Drawing.Point(156, 301);
+            this.OthersLAB.Location = new System.Drawing.Point(156, 316);
             this.OthersLAB.Name = "OthersLAB";
-            this.OthersLAB.Size = new System.Drawing.Size(45, 15);
+            this.OthersLAB.Size = new System.Drawing.Size(0, 15);
             this.OthersLAB.TabIndex = 1;
-            this.OthersLAB.Text = "label9";
             // 
             // BankLAB
             // 
             this.BankLAB.AutoSize = true;
-            this.BankLAB.Location = new System.Drawing.Point(156, 261);
+            this.BankLAB.Location = new System.Drawing.Point(156, 276);
             this.BankLAB.Name = "BankLAB";
-            this.BankLAB.Size = new System.Drawing.Size(45, 15);
+            this.BankLAB.Size = new System.Drawing.Size(0, 15);
             this.BankLAB.TabIndex = 1;
-            this.BankLAB.Text = "label9";
             // 
             // PhonenumLAB
             // 
             this.PhonenumLAB.AutoSize = true;
-            this.PhonenumLAB.Location = new System.Drawing.Point(156, 221);
+            this.PhonenumLAB.Location = new System.Drawing.Point(156, 236);
             this.PhonenumLAB.Name = "PhonenumLAB";
-            this.PhonenumLAB.Size = new System.Drawing.Size(45, 15);
+            this.PhonenumLAB.Size = new System.Drawing.Size(0, 15);
             this.PhonenumLAB.TabIndex = 1;
-            this.PhonenumLAB.Text = "label9";
             // 
             // AddressLAB
             // 
             this.AddressLAB.AutoSize = true;
             this.AddressLAB.Location = new System.Drawing.Point(156, 181);
+            this.AddressLAB.MaximumSize = new System.Drawing.Size(250, 150);
             this.AddressLAB.Name = "AddressLAB";
-            this.AddressLAB.Size = new System.Drawing.Size(45, 15);
+            this.AddressLAB.Size = new System.Drawing.Size(0, 15);
             this.AddressLAB.TabIndex = 1;
-            this.AddressLAB.Text = "label9";
             // 
             // PersonalNumLAB
             // 
             this.PersonalNumLAB.AutoSize = true;
             this.PersonalNumLAB.Location = new System.Drawing.Point(156, 141);
             this.PersonalNumLAB.Name = "PersonalNumLAB";
-            this.PersonalNumLAB.Size = new System.Drawing.Size(45, 15);
+            this.PersonalNumLAB.Size = new System.Drawing.Size(0, 15);
             this.PersonalNumLAB.TabIndex = 1;
-            this.PersonalNumLAB.Text = "label9";
             // 
             // PasswordLAB
             // 
             this.PasswordLAB.AutoSize = true;
             this.PasswordLAB.Location = new System.Drawing.Point(156, 100);
             this.PasswordLAB.Name = "PasswordLAB";
-            this.PasswordLAB.Size = new System.Drawing.Size(45, 15);
+            this.PasswordLAB.Size = new System.Drawing.Size(0, 15);
             this.PasswordLAB.TabIndex = 1;
-            this.PasswordLAB.Text = "label9";
             // 
             // ClinetNumLAB
             // 
             this.ClinetNumLAB.AutoSize = true;
             this.ClinetNumLAB.Location = new System.Drawing.Point(156, 59);
             this.ClinetNumLAB.Name = "ClinetNumLAB";
-            this.ClinetNumLAB.Size = new System.Drawing.Size(45, 15);
+            this.ClinetNumLAB.Size = new System.Drawing.Size(0, 15);
             this.ClinetNumLAB.TabIndex = 1;
-            this.ClinetNumLAB.Text = "label9";
             // 
             // nameLAB
             // 
             this.nameLAB.AutoSize = true;
             this.nameLAB.Location = new System.Drawing.Point(156, 17);
             this.nameLAB.Name = "nameLAB";
-            this.nameLAB.Size = new System.Drawing.Size(45, 15);
+            this.nameLAB.Size = new System.Drawing.Size(0, 15);
             this.nameLAB.TabIndex = 1;
-            this.nameLAB.Text = "label9";
             // 
             // CustomerList
             // 
             this.CustomerList.FormattingEnabled = true;
             this.CustomerList.ItemHeight = 15;
-            this.CustomerList.Location = new System.Drawing.Point(830, 12);
+            this.CustomerList.Location = new System.Drawing.Point(419, 12);
             this.CustomerList.Name = "CustomerList";
-            this.CustomerList.Size = new System.Drawing.Size(257, 454);
+            this.CustomerList.Size = new System.Drawing.Size(279, 409);
             this.CustomerList.TabIndex = 10;
             this.CustomerList.SelectedIndexChanged += new System.EventHandler(this.CustomerList_SelectedIndexChanged);
             // 
-            // 로드
-            // 
-            this.로드.Location = new System.Drawing.Point(142, 437);
-            this.로드.Name = "로드";
-            this.로드.Size = new System.Drawing.Size(75, 23);
-            this.로드.TabIndex = 11;
-            this.로드.Text = "로드";
-            this.로드.UseVisualStyleBackColor = true;
-            this.로드.Click += new System.EventHandler(this.로드_Click);
-            // 
             // Delete
             // 
-            this.Delete.Location = new System.Drawing.Point(999, 432);
+            this.Delete.Location = new System.Drawing.Point(610, 432);
             this.Delete.Name = "Delete";
             this.Delete.Size = new System.Drawing.Size(88, 34);
-            this.Delete.TabIndex = 2;
+            this.Delete.TabIndex = 12;
             this.Delete.Text = "삭제";
             this.Delete.UseVisualStyleBackColor = true;
             this.Delete.Click += new System.EventHandler(this.Delete_Click);
+            // 
+            // Newbt
+            // 
+            this.Newbt.Location = new System.Drawing.Point(419, 432);
+            this.Newbt.Name = "Newbt";
+            this.Newbt.Size = new System.Drawing.Size(83, 34);
+            this.Newbt.TabIndex = 10;
+            this.Newbt.Text = "신규회원";
+            this.Newbt.UseVisualStyleBackColor = true;
+            this.Newbt.Click += new System.EventHandler(this.Newbt_Click);
+            // 
+            // editbt
+            // 
+            this.editbt.Location = new System.Drawing.Point(508, 432);
+            this.editbt.Name = "editbt";
+            this.editbt.Size = new System.Drawing.Size(96, 34);
+            this.editbt.TabIndex = 11;
+            this.editbt.Text = "수정하기";
+            this.editbt.UseVisualStyleBackColor = true;
+            this.editbt.Click += new System.EventHandler(this.Editbt_Click);
+            // 
+            // editokbt
+            // 
+            this.editokbt.Location = new System.Drawing.Point(317, 432);
+            this.editokbt.Name = "editokbt";
+            this.editokbt.Size = new System.Drawing.Size(82, 34);
+            this.editokbt.TabIndex = 13;
+            this.editokbt.Text = "수정하기";
+            this.editokbt.UseVisualStyleBackColor = true;
+            this.editokbt.Visible = false;
+            this.editokbt.Click += new System.EventHandler(this.Editokbt_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1099, 483);
-            this.Controls.Add(this.Delete);
-            this.Controls.Add(this.로드);
-            this.Controls.Add(this.CustomerList);
+            this.ClientSize = new System.Drawing.Size(722, 483);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.editbt);
+            this.Controls.Add(this.Newbt);
+            this.Controls.Add(this.Delete);
             this.Controls.Add(this.Save);
+            this.Controls.Add(this.CustomerList);
             this.Controls.Add(this.Others);
             this.Controls.Add(this.Bankbook);
             this.Controls.Add(this.PhoneNum);
@@ -443,6 +460,7 @@
             this.Controls.Add(this.PersonalNumBox);
             this.Controls.Add(this.ClientNumBox);
             this.Controls.Add(this.Namebox);
+            this.Controls.Add(this.editokbt);
             this.Name = "Form1";
             this.Text = "CientManageProgram";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -490,8 +508,10 @@
         private System.Windows.Forms.Label ClinetNumLAB;
         private System.Windows.Forms.Label nameLAB;
         private System.Windows.Forms.ListBox CustomerList;
-        private System.Windows.Forms.Button 로드;
         private System.Windows.Forms.Button Delete;
+        private System.Windows.Forms.Button Newbt;
+        private System.Windows.Forms.Button editbt;
+        private System.Windows.Forms.Button editokbt;
     }
 }
 
